@@ -1,0 +1,12 @@
+body{
+    font-family: "Monteserrat", sans-serif;
+    background-color: rgb(185,20,80);
+}
+
+.my-bg-white{
+    background-color: white;
+}
+
+.my-text-red{
+    color: rgb(185,20,80);
+}

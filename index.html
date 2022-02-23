@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto treno</title>
+    <!-- Montserrat google font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <!-- Bootstrap 5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="text-white text-uppercase">Calcola il prezzo del tuo biglietto</h1>
+                </div>
+            </div>
+                
+            <form class="row justify-content-center my-bg-white text-center p-5">
+                <div class="col-4">
+                    <label for="validationCustom01" class="form-label my-text-red">Nome e Cognome</label>
+                    <input type="text" class="form-control" id="user-data">
+                </div>
+    
+                <div class="col-4">
+                    <label for="validationCustom02" class="form-label my-text-red">Km da percorrere</label>
+                    <input type="text" class="form-control" id="km-to-do">
+                </div>
+    
+                <div class="col-4">
+                    <label for="validationCustom03" class="form-label my-text-red">Fascia d'eta'</label>
+                    <select class="form-select">
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="over-65">Over 65</option>
+                    </select>
+                </div>
+                
+                <div class="col-2 pt-5">
+                    <button onclick="myFunction()" type="submit" class="btn btn-secondary my-text-red">Genera</button>
+                </div>
+    
+                <div class="col-2 pt-5">
+                    <button type="reset" class="btn btn-secondary my-text-red">Annulla</button>
+                </div>
+
+            </form>     
+        </section>
+
+        <section class="container pt-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="text-white text-uppercase">Il tuo biglietto</h1>
+                </div>
+            </div>
+
+            <div class="row my-bg-white">
+                <div class="col-12 text-uppercase">
+                    <h3>dettaglio passeggeri</h3>
+                </div>
+
+                <div class="col-3">
+                    <h5>Nome Passeggero</h5>
+                    <p id="nome-passeggero"></p>
+                </div>
+    
+                <div class="col-3">
+                    <h5>Offerta</h5>
+                    <p></p>
+                </div>
+
+                <div class="col-2">
+                    <h5>Carrozza</h5>
+                    <p></p>
+                </div>
+
+                <div class="col-2">
+                    <h5>Codice CP</h5>
+                    <p></p>
+                </div>
+
+                <div class="col-2">
+                    <h5>Costo biglietto</h5>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Javascript -->
+   <script src="js/script.js"></script> 
+</body>
+</html>
